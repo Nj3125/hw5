@@ -1,4 +1,5 @@
 Github Repo: https://github.com/Nj3125/hw5
+Github Pages: https://nj3125.github.io/hw5/
 
 Right now, most of the required features are implemented, including:
 • (4) letter tiles in the player’s “hand” are selected randomly from a data structure with the proper
