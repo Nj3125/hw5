@@ -11,7 +11,16 @@ let totalScore = 0
 let posScore = 0
 let allTiles = [];
 
+$.getJSON("./graphics_data/pieces.json")
+  .done(function (data) {
+      console.log("JSON LOADED", data);
+  })
+  .fail(function (jqxhr, textStatus, error) {
+      console.error("JSON FAILED", textStatus, error);
+  });
+
 $.getJSON("./graphics_data/pieces.json", function(data) {
+
     // Add all the pieces to the array:
     data.pieces.forEach(piece => {
         for (let i = 0; i < piece.amount; i++) {
