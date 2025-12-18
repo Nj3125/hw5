@@ -11,7 +11,7 @@ let totalScore = 0
 let posScore = 0
 let allTiles = [];
 
-$.getJSON("../graphics_data/pieces.json", function(data) {
+$.getJSON("graphics_data/pieces.json", function(data) {
     // Add all the pieces to the array:
     data.pieces.forEach(piece => {
         for (let i = 0; i < piece.amount; i++) {
@@ -35,7 +35,7 @@ $.getJSON("../graphics_data/pieces.json", function(data) {
         `);
 
         tile.css({
-            backgroundImage: `url('../graphics_data/Scrabble_Tiles/Scrabble_Tile_${piece.letter}.jpg')`,
+            backgroundImage: `url('graphics_data/Scrabble_Tiles/Scrabble_Tile_${piece.letter}.jpg')`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             width: "50px",
@@ -218,7 +218,7 @@ function createTile(piece) {
     `);
 
     tile.css({
-        backgroundImage: `url('../graphics_data/Scrabble_Tiles/Scrabble_Tile_${piece.letter}.jpg')`,
+        backgroundImage: `url('graphics_data/Scrabble_Tiles/Scrabble_Tile_${piece.letter}.jpg')`,
         backgroundSize: "cover",
         width: "50px",
         height: "50px"
