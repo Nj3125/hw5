@@ -1,0 +1,56 @@
+/*
+File: style.css
+GUI Assignment:  Scrabble [HW5]
+Nicholas Johnson, UMass Lowell Computer Science, Nicholas_Johnson5@student.uml.edu 
+Copyright (c) 2025 by Nicholas Johnson.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+Template for header made by Wenjin Zhou and provided in the HW1 pdf.
+*/
+
+/* For all targets */
+.target {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* For the board */
+.board {
+    width: calc(15 * 50px);
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(15, 50px);
+    gap: 0;
+
+    background-image: url("../graphics_data/Scrabble_Board_OneLine.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* For the tile rack */
+#tileRack {
+    position: relative;
+
+    width: 400px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+    background-image: url("../graphics_data/scrabble-tile-holder-406774_640.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* For the rack slots */
+.rack-slot {
+    width: 50px;
+    height: 50px;
+}

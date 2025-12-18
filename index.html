@@ -1,0 +1,44 @@
+<!-- 
+File: index.html 
+GUI Assignment:  Scrabble [HW5]
+Nicholas Johnson, UMass Lowell Computer Science, Nicholas_Johnson5@student.uml.edu 
+Copyright (c) 2025 by Nicholas Johnson.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+Template for header made by Wenjin Zhou and provided in the HW1 pdf.
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Scrabble</title> 
+
+        <!--JQuery Stylesheet-->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+        <!--Personal Stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Scrabble</h1>
+        <p>This is a scrabble board</p>
+        <div id="pos-score">Possible Score: 0</div>
+        <div id="total-score">Total Score: 0</div>
+        <!--Board slots are created dynamically in Board.js-->
+        <div class="board"></div>
+
+        <!--Rack slots are created dynamically-->
+        <div id="tileRack"></div>
+        <button id="submit-word">Submit word</button>
+        <button id="restart-game">Restart</button>
+
+        <!--JQuery Includes-->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+        <!--Personal Includes-->
+        <script src="js/Board.js"></script>
+        <script src="js/Rack.js"></script>
+        <script src="js/Tiles.js"></script>
+    </body>
+</html>
